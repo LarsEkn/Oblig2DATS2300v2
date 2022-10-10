@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Oblig2Test {
 
-    /*////// Oppgave 1 /////////////////////
+    ////// Oppgave 1 /////////////////////
     @org.junit.jupiter.api.Test
     void oppgave1() {
         int antallFeil = 0;
@@ -640,12 +640,12 @@ class Oblig2Test {
             antallFeil++;
             System.out.println("Oppgave 5i: Feil i metoden leggInn()!");
         }
-
+        int i= 0;
         if (!liste.omvendtString().equals("[7, 6, 5, 4, 3, 2, 1]")) {
             antallFeil++;
             System.out.println("Oppgave 5j: Feil i metoden leggInn()!");
         }
-    }*/
+    }
 
     ///////// Oppgave 6 //////////////////////////
     @org.junit.jupiter.api.Test
@@ -922,7 +922,7 @@ class Oblig2Test {
             antallFeil++;
         }
     }
-/*
+
     //// Oppgave 7 ////////////////////////////
     @org.junit.jupiter.api.Test
     void oppgave7() {
@@ -956,7 +956,7 @@ class Oblig2Test {
             antallFeil++;
             System.out.println("Oppgave 7d: Feil i metoden nullstill()!");
         }
-    }*/
+    }
 
     //// Oppgave 8 ////////////////////////////
     @org.junit.jupiter.api.Test
@@ -1149,8 +1149,8 @@ class Oblig2Test {
             }
         }
     }
-
-    /*////// Oppgave 9 /////////////////////
+/*
+    ////// Oppgave 9 /////////////////////
     @org.junit.jupiter.api.Test
     void oppgave9() {
         int antallFeil = 0;
