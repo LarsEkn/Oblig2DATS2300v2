@@ -210,9 +210,9 @@ public class DobbeltLenketListe<T> implements Liste<T> {
     public boolean fjern(T verdi) {
         boolean resultat = false;
         int indeks = -1;
+        int teller = 0;
         int runloop = 0;
         Node<T> r = hode;
-        int teller = 0;
         while (runloop == 0 && r != null){
             if (verdi.equals(r.verdi)){
                 runloop = 1;
@@ -226,10 +226,6 @@ public class DobbeltLenketListe<T> implements Liste<T> {
         if (indeks != -1){
             Node<T> p;
             Node<T> q;
-            r = hode;
-            for (int i = 0; i < indeks; i++) {
-                r = r.neste;
-            }
             q = r.forrige;
             p = r.neste;
             if (indeks == 0 && indeks != antall-1){

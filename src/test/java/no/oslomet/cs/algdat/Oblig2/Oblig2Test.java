@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Oblig2Test {
 
-    ////// Oppgave 1 /////////////////////
+    /*////// Oppgave 1 /////////////////////
     @org.junit.jupiter.api.Test
     void oppgave1() {
         int antallFeil = 0;
@@ -645,7 +645,7 @@ class Oblig2Test {
             antallFeil++;
             System.out.println("Oppgave 5j: Feil i metoden leggInn()!");
         }
-    }
+    }*/
 
     ///////// Oppgave 6 //////////////////////////
     @org.junit.jupiter.api.Test
@@ -905,13 +905,13 @@ class Oblig2Test {
         for (int i = 1; i <= 100_000; i++) nyliste.leggInn(i);
         long tid1 = System.currentTimeMillis();
         for (int i = 40000; i <= 50000; i++) nyliste.fjern(new Integer(i));
-        tid1 = System.currentTimeMillis() - tid1;
+        System.out.println(tid1 = System.currentTimeMillis() - tid1);
         nyliste = new DobbeltLenketListe<>();
 
         for (int i = 1; i <= 100_000; i++) nyliste.leggInn(i);
         long tid2 = System.currentTimeMillis();
         for (int i = 40000; i <= 50000; i++) nyliste.fjern(i);
-        tid2 = System.currentTimeMillis() - tid2;
+        System.out.println(tid2 = System.currentTimeMillis() - tid2);
 
         long maks = Math.max(tid1, tid2);
         long min = Math.min(tid1, tid2);
@@ -922,7 +922,7 @@ class Oblig2Test {
             antallFeil++;
         }
     }
-
+/*
     //// Oppgave 7 ////////////////////////////
     @org.junit.jupiter.api.Test
     void oppgave7() {
@@ -956,7 +956,7 @@ class Oblig2Test {
             antallFeil++;
             System.out.println("Oppgave 7d: Feil i metoden nullstill()!");
         }
-    }
+    }*/
 
     //// Oppgave 8 ////////////////////////////
     @org.junit.jupiter.api.Test
@@ -1150,7 +1150,7 @@ class Oblig2Test {
         }
     }
 
-    ////// Oppgave 9 /////////////////////
+    /*////// Oppgave 9 /////////////////////
     @org.junit.jupiter.api.Test
     void oppgave9() {
         int antallFeil = 0;
@@ -1294,6 +1294,6 @@ class Oblig2Test {
             System.out.println("Oppgave 10f: Metoden sorterer feil!");
             antallFeil++;
         }
-    }
+    }*/
 
 }
