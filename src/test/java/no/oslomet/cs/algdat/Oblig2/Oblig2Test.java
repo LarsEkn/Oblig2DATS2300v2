@@ -905,13 +905,13 @@ class Oblig2Test {
         for (int i = 1; i <= 100_000; i++) nyliste.leggInn(i);
         long tid1 = System.currentTimeMillis();
         for (int i = 40000; i <= 50000; i++) nyliste.fjern(new Integer(i));
-        System.out.println(tid1 = System.currentTimeMillis() - tid1);
+        tid1 = System.currentTimeMillis() - tid1;
         nyliste = new DobbeltLenketListe<>();
 
         for (int i = 1; i <= 100_000; i++) nyliste.leggInn(i);
         long tid2 = System.currentTimeMillis();
         for (int i = 40000; i <= 50000; i++) nyliste.fjern(i);
-        System.out.println(tid2 = System.currentTimeMillis() - tid2);
+        tid2 = System.currentTimeMillis() - tid2;
 
         long maks = Math.max(tid1, tid2);
         long min = Math.min(tid1, tid2);
